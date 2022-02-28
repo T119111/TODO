@@ -1,4 +1,5 @@
 const form = document.getElementById("form");
+const date = document.getElementById("date");
 const input = document.getElementById("input");
 const ul = document.getElementById("ul");
 const todos = JSON.parse(localStorage.getItem("todos"));
@@ -15,7 +16,7 @@ form.addEventListener("submit", function (event) {
 });
 
 function add(todo){
-    let todoText = input.value;
+    let todoText = date.value + " " + input.value;
     if(todo){
         todoText = todo.text;
     }
@@ -40,6 +41,7 @@ function add(todo){
         });
 
         ul.appendChild(li);
+        date.value = "";
         input.value = "";
         saveData();
     }
