@@ -1,7 +1,7 @@
 # TODO
 HTMLとJavaScriptで構成されるTODOアプリです。
 
-[アプリケーションURL](t119111.github.io/todo/)
+[アプリケーションURL](https://t119111.github.io/TODO/)
 
 ↓この動画を参考に行い、日にちを選択する機能を追加しました。
 
